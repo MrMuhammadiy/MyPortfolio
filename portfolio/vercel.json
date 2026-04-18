@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "./",
+  "redirects": [
+    {
+      "source": "/skills.html",
+      "destination": "/skills/",
+      "permanent": true
+    },
+    {
+      "source": "/projects.html",
+      "destination": "/projects/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/journey.html",
+      "destination": "/journey/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    }
+  ]
+}
